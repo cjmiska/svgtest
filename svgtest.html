@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src="dist/snap.svg.js"></script>
+	</head>
+	<body>
+		<svg id="svg">
+			<script>
+				var paper=Snap(500, 500)
+				var circ=paper.circle(200, 200, 100);
+				circ.attr( {
+					fill: "#bada55",
+					stroke: "#000",
+					strokeWidth: 10
+				});
+				var tri=paper.polyline(200, 200, 150, 280, 250, 280);
+				tri.attr( {
+					stroke: "#000",
+					strokeWidth: 1
+				});
+				/*var t = new Snap.Matrix()
+					.rotate(180, 200, 200);
+				tri.transform(t);*/
+				tri.click(function() {
+					tri.transform('');
+					tri.animate({transform: "r" + 360 + ",200,200"}, 1000, mina.bounce);
+				});
+			</script>
+		</svg>
+	</body>
+</html>
