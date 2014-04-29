@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src="snap.svg-min.js"></script>
+	</head>
+	<body style="background:#000">
+	
+		<script>
+				var paper = Snap(400, 400);
+				Snap.load("plus2.svg", function (f) {
+				var g = f.select("g");
+				paper.append(g);
+				g.attr({fill:"#bada55",stroke:"#bada55"});
+				});
+		</script>
+		
+	</body>
+	
+</html>
+

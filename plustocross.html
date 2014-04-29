@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="style_rooms.css">
+		<script src="snap.svg-min.js"></script>
+	</head>
+	<body style="background:#000">
+		
+		<!-- Menu -->
+	<nav class="menu" id="theMenu">
+		<div class="menu-wrap">
+			<h1 class="logo"><a href="index.html">HOME</a></h1>
+			<i class="icon icon-arrow-right menu-close"></i>
+			<a href="battersby.html">Battersby</a>
+			<a href="bishop.html">Bishop</a>
+			<a href="duckworth.html">Duckworth</a>
+			<a href="tanner.html">Tanner</a>
+			<a href="tilsley.html">Tilsley</a>
+			<a href="kitchendining.html">Kitchen / Dining Room</a>
+			<a href="garden.html">Garden</a>
+			<a href="https://www.facebook.com/CambridgeServicedRooms"><i class="icon icon-facebook"></i></a>
+			<a href="http://www.twitter.com/CSR_Cambridge"><i class="icon icon-twitter"></i></a>
+			<a href="mailto:info@cambridgeservicedrooms.com"><i class="icon icon-envelope"></i></a>
+		<div style="background-image:url(images/barlow/barlow_tab.jpg);width:100%;height:60px;position:absolute;bottom:0%;"></div>
+		</div>
+		
+		<!-- Menu button -->
+		<div id="menuToggle">
+		<section class="si-icons si-icons-default">
+			
+			<span class="si-icon si-icon-hamburger-cross" data-icon-name="hamburgerCross"></span>
+			
+		</section>
+		</div>
+	</nav>
+		
+		<script src="jquery-1.10.2.min.js"></script>
+		<script src="svgicons-config.js"></script>
+		<script src="svgicons.js"></script>
+		
+		<script>
+			(function() {
+				// initialize all
+				
+				[].slice.call( document.querySelectorAll( '.si-icons-default > .si-icon' ) ).forEach( function( el ) {
+					var svgicon = new svgIcon( el, svgIconConfig );
+				} );
+				
+				new svgIcon( document.querySelector( '.si-icons-easing .si-icon-hamburger-cross' ), svgIconConfig, { easing : mina.elastic, speed: 800 } );
+				
+				})();
+		</script>
+		
+	</body>
+	
+	<script src="bootstrap.min.js"></script>
+	<script src="main.js"></script>
+	
+</html>
